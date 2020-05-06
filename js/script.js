@@ -16,12 +16,14 @@ let checkAndCreate = () => {
     if (target != null) {
         target.setAttribute('disabled', '');
         target.removeAttribute('id');
+        target.removeAttribute('autofocus');
         firstTime = false;
     }
 
     main.appendChild(row);
     target = document.querySelector("#input_user");
-
+    target.focus();
+    
     if (firstTime) {
         target.setAttribute('value', 'help');
     }
