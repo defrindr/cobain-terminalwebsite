@@ -39,7 +39,7 @@ const data = {
                 Qoute : <br>
                 <pre>Make your dream real.</pre>
                 `,
-        readme: "Come to HELL , Boy",
+        readme: "Read me ??",
     },
     default: "Err: Command not found",
 };
