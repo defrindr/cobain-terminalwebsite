@@ -55,14 +55,17 @@ let chooseOutput = (input, text) => {
         }
 
     } else if (input.match(/echo */i)){
-        let regex = input.split(/echo \"(.+?)\"/gm);
-        console.log(regex);
-        if(regex[1] !== undefined){
-            text = regex[1];
-        }else {
-            let variable = input.replace(/echo /gm,"");
-            text = `Variable "${variable}" not found`;
-        }
+            if(input.match(/echo \$/gm,"")){
+                let variable = input.replace(/echo \$/gm,"");
+                text = `Variable "${variable}" not found`;
+            }else{
+                let regex = input.split(/echo \"(.+?)\"/gm);
+                if(regex[1] !== undefined){
+                    text = regex[1];
+                }else {
+                    text = input.replace("echo ","");
+                }
+            }
     } else {
         text = dataStr.default;
     }
