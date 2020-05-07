@@ -38,7 +38,7 @@ let compare = (input, compare) => {
 
 let chooseOutput = (input, text) => {
     if (compare(input, "help")) {
-        text = dataStr.help;
+        text = dataStr.help.join("\t");
     } else if (compare(input, "clear")) {
         main.innerHTML = "";
     } else if (compare(input, "ls")) {
@@ -54,6 +54,15 @@ let chooseOutput = (input, text) => {
             text = dataStr.cat.noteFound;
         }
 
+    } else if (input.match(/echo */i)){
+        let regex = input.split(/echo \"(.+?)\"/gm);
+        console.log(regex);
+        if(regex[1] !== undefined){
+            text = regex[1];
+        }else {
+            let variable = input.replace(/echo /gm,"");
+            text = `Variable "${variable}" not found`;
+        }
     } else {
         text = dataStr.default;
     }
