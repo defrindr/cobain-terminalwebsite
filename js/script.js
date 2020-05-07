@@ -23,7 +23,7 @@ let checkAndCreate = () => {
     main.appendChild(row);
     target = document.querySelector("#input_user");
     target.focus();
-    
+
     if (firstTime) {
         target.setAttribute('value', 'help');
     }
@@ -50,6 +50,8 @@ let chooseOutput = (input, text) => {
             text = dataStr.cat.readme;
         } else if (file == "bio.txt") {
             text = dataStr.cat.bio;
+        }else{
+            text = dataStr.cat.noteFound;
         }
 
     } else {

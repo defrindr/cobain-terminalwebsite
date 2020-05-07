@@ -40,6 +40,7 @@ const data = {
                 <pre>Make your dream real.</pre>
                 `,
         readme: "Read me ??",
+        noteFound: "Err: File not found"
     },
     default: "Err: Command not found",
 };
