@@ -1,3 +1,3 @@
 # Termi-Web
 pengobat rasa bosan
-[https://github.com/defrindr/termiweb](https://github.com/defrindr/termiweb)
+[https://defrindr.github.io//termiweb](https://defrindr.github.io//termiweb)
