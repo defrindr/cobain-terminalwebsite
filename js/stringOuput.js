@@ -1,5 +1,11 @@
 const data = {
-    help: "ls       cat     help    clear",
+    help: [
+        "ls",
+        "help",
+        "echo",
+        "cat",
+        "clear"
+    ],
     ls: "readme.txt  bio.txt",
     cat: {
         bio: `
