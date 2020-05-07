@@ -1,6 +1,6 @@
 import './newRow.js';
 import './terminal-header.js';
-import dataStr from './stringOuput.js';
+import dataStr from './stringOutput.js';
 
 let target = document.querySelector("#input_user");
 let main = document.querySelector("#main");
