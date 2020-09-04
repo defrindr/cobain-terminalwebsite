@@ -41,7 +41,7 @@ a{
     color: #196d2e;
     font-size: .8rem;
     font-weight: bold;
-    height: calc(100vh - calc( 5rem * 2 ));
+    height: calc(80vh - calc( 5rem * 2 ));
     overflow-y: auto;
     overflow-x: hidden;
 }
